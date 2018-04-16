@@ -775,7 +775,7 @@ edgeSuppress = settingRECON.edgeSuppress;                   %% Since border area
 useDiskVariable = settingRECON.useDiskVariable;             %% Result can be directly saved the result on disk in a frame-by-frame manner. Recommended for large data. SSD is strongly recommended.
 
 
-savePath = ['..\Data\03_Reconstructed\' inputFilePath( findstr(inputFilePath, '\Data\02_Rectified\') + 19 : end)];
+savePath = ['../Data/03_Reconstructed/' inputFilePath( findstr(inputFilePath, '/Data/02_Rectified/') + 19 : end)];
 if exist(savePath)==7,
    ; 
 else
